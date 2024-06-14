@@ -88,7 +88,7 @@ async function requestDeposit(message) {
         );
 
         if (!deposit) {
-            bot.sendMessage('Такого вклада нет.')
+            bot.sendMessage('Такого вклада нет.');
             return;
         }
 
@@ -105,11 +105,10 @@ async function requestDeposit(message) {
               Вы согласны открыть вклад?
           `;
 
-        bot.sendMessage(botResponse)
+        bot.sendMessage(botResponse);
         bot.currentAction = ACTIONS.requestAccept;
-    }
-    catch(e) {
-        bot.sendMessage('Попробуйте заново.')
+    } catch (e) {
+        bot.sendMessage('Попробуйте заново.');
     } finally {
         bot.enableListen();
     }

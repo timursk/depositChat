@@ -230,4 +230,4 @@ const DEPOSITS = [
     },
 ];
 
-module.exports = DEPOSITS
+module.exports = DEPOSITS;
